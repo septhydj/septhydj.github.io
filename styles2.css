@@ -1,0 +1,667 @@
+body {
+    font-familly: "Open Sans", sans-serif;
+    color: #030335;
+}
+
+a {
+    color: #ff5821;
+}
+
+a:hover {
+    color: #ff7e54;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-familly: "Raleway", sans-serif;
+}
+
+#topbar {
+    background: #0e699a;
+    font-size: 14px;
+    padding: 0;
+    color:rgba(255,255,255,0.8);
+}
+#topbar .contact-info ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#topbar .contact-info li {
+    display: inline-block;
+    padding: 8px 0;
+}
+#topbar .contact-info li + li {
+    margin-left: 18px;
+}
+#topbar .contact-info a {
+    color: rgba(255,255,255,0.8);
+    transition: 0.3s;
+}
+#topbar .contact-info a:hover {
+    color: #fff;
+}
+#topbar .contact-info i {
+    color: #ff5821;
+}
+#topbar .cta a {
+    color: #fff;
+    background: #ff5821;
+    padding: 8px 20px;
+    display: inline-block;
+    transition: 0,3s;
+}
+#topbar .cta a:hover {
+    background: #f31d00;
+}
+
+/* Header*/
+#header {
+    height: 70px;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 10px 0;
+    background: #fff;
+}
+#header .logo-img {
+    position: relative;
+    left: -50px;
+    bottom: -2px;
+    height: 600px;
+    width: 200px;
+
+}
+#header .logo h1 {
+    font-size: 48px;
+    margin: 0;
+    padding: 0px 0;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+#header .header-scrolled {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+}
+
+#header .logo h1 a:hover {
+    color: #0e699a;
+    text-decoration: none;
+}
+
+/* Navigation Menu */
+.nav-menu,
+.nav-menu *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+}
+.nav-menu a {
+    display: block;
+    position: relative;
+    color: #0e699a;
+    padding: 14px 15px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: "poppins",sans-serif;
+}
+.nav-menu a:hover,
+.nav-menu .active >a,
+.nav-menu li:hover >a{
+    color: #ff5821;
+    text-decoration: none;
+}
+
+.nav-menu .drop-down ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 30px);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127,137,161,0.25);
+    transition: ease all 0.3s;
+    border-radius: 8px;
+}
+.nav-menu .drop-down:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+.nav-menu .drop-down li {
+    min-width: 180px;
+    position: relative;
+}
+.nav-menu .drop-down ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    color: lightne(#473d3a, 10);
+}
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active >a,
+.nav-menu .drop-down ul li:hover >a {
+    color: #ff5821;
+}
+.nav-menu .drop-down > a:hover {
+    content: "\ea99";
+    font-family: "poppins",sans-serif;
+    padding-left: 15px;
+}
+.nav-menu .drop-down .drop-down ul {
+    top: 0;
+    left: calc(1005 -30px);
+}
+.nav-menu .drop-down .drop-down:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+}
+.nav-menu .drop-down .drop-down > a {
+    padding-right: 35px;
+}
+
+/*Introduction*/
+#intro {
+    width: 100%;
+    height: 60vh;
+    background: url("crash.png") center center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    padding: 0;
+    margin-bottom: -120px;
+}
+#intro::before {
+    content: "";
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 0;
+    top: 5;
+    left: 0;
+    right: 0;
+}
+#intro h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color:#0e699a;
+}
+#intro h2 {
+    color: #0e699a;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+#intro .get-started-icon {
+    font-size: 30px;
+    background: #ff5821;
+    padding: 15px;
+    color: #fff;
+    border-radius: 20px;
+    position: relative;
+    z-index: 5;
+    box-shadow: 10px 2px 15px rgba(0,0,0,0.1)
+}
+#intro .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 18px 26px 8px 26px;
+    color: #fff;
+    background: #0e699a;
+    border-radius: 10px 30px 10px 30px;
+    position: relative;
+    z-index: 4;
+}
+#intro .btn-get-started:hover {
+    background: #fd9f08;
+}
+
+@media (min-width: 1024px) {
+    #intro {
+        background-attachmen: fixed;
+    }
+}
+@media (max-width:1024px),(max-height:768px) {
+    #intro {
+        margin-bottom: -150px;
+        height: 80vh;
+    }
+}
+@media (max-width:768px) {
+    #intro {
+        height: 80vh;
+    }
+    #intro h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #intro h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-height:500px) {
+    #intro {
+        height: 100vh;
+    }
+}
+/* about us*/
+.about {
+    padding: 50px 0 50px 0;
+    position: relative;
+    z-index: 3:
+}
+.about .content {
+    padding: 30px;
+    background: #0e699a;
+    border-radius: 4px;
+    color: #fff;
+}
+.about .content h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.about .content p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.about .content .more-btn {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+}
+.about .content .more-btn i {
+    font-size: 14px;
+}
+.about .content .more-btn:hover {
+    color: #ff5821;
+    background: #fff;
+}
+.about .icon-boxes .icon-box {
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    padding: 40px 30px;
+    width: 100%;
+}
+ .about .icon-boxes .icon-box i {
+    font-size: 40px;
+    color: #ff5821;
+    margin-bottom: 30px;
+ }
+ .about .icon-boxes .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 30px 0
+ }
+ .about .icon-boxes .icon-box p {
+    font-size: 15px;
+    text-align: justify;
+    color: #716f6f;
+ }
+/* values*/
+.values .card {
+    border: 0;
+    padding: 160px 20px 20px 20px;
+    position: relative;
+    width: 100%;
+    background-size: 100% 95%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.values .card-body {
+    z-index: 10;
+    background: rgba(255,255,255,0.9);
+    padding: 15px 30px;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    transition: ease-in-out 0.4s;
+    border-radius: 5px;
+}
+.values
+.values .card-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.values .card-title a {
+    color: #473d3a;
+}
+.values .card-text {
+    color: #4b4949
+}
+.values .read-more a {
+    color: #fcb61f;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.values .read-more a:hover {
+    text-decoration: underline;
+    color: #3c87ff;
+}
+.values .card:hover .card-body {
+    background: #0e699a;
+    color: white;
+}
+.values .card:hover .read-more a,
+.values .card:hover .card-title,
+.values .card:hover .card-title a,
+.values .card:hover .card-text {
+    color: #fff;
+}
+
+/* Team*/
+.team .section-title {
+    text-align: center;
+    padding-top: 60px;
+}
+.team .section-title p {
+    font-size: 20px;
+}
+.team .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+.team .member .member-img {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+.team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 60px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+    background: rgba(255,255,255,0.85);
+}
+.team .member .social a {
+    transition: color 0.3s;
+    color: #473d3a;
+    margin: 0 10px;
+    padding-top: 8px;
+    display: inline-block;
+}
+.team .member .social a:hover {
+    color: #ff5821;
+}
+.team .member .social i {
+    font-size: 30px;
+    margin: 0 2px;
+}
+.team .member:hover .social {
+    opacity: 1;
+}
+.team .member .member-info p {
+    font-style: italic;
+    font-size: 30px;
+    line-height: 26px;
+    color: #656262;
+}
+.team .member .member-info span{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color: #989595;
+}
+.team .member .member-info {
+    padding: 25px 15px;
+}
+.team .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #473d3a;
+}
+/*contact*/
+.contact .bg-info {
+    margin-top: 60px;
+}
+.contact .info-box {
+    color: #313030;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.contact .info-box i {
+    font-size: 26px;
+    color: #ff5821;
+    float: left;
+    padding: 5px;
+    margin-right: 10px;
+}
+.contact .info-box h3 {
+    font-size: 20px;
+    color: #656262;
+    font-weight: 700;
+    margin: 10px 0 10px 50px;
+}
+.contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 50px;
+}
+.contact .php-email-form button[type="submit"] {
+    background: #0e699a;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0,4s;
+}
+.contact .php-email-form button[type="submit"]:hover {
+    background: #7cb5d4;
+}
+
+.associated {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 200px;
+}
+.form-box {
+    width: 500px;
+    background: rgb(14, 105, 154, 0.8);
+    margin: 12% auto;
+    padding: 50px 0;
+    color: #fff;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}
+.form-box h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.input-box {
+    margin: 31px auto;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.input-box input{
+    background: transparent;
+    width: 90%;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.input-box ::placeholder{
+    color: #fff;
+}
+.login-btn {
+    margin: 48px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+/*intro tabrakan fisika*/
+#lingkar {
+    width: 100%;
+    height: 80vh;
+    background: url("crash.png") center center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    padding: 0;
+    margin-bottom: 10px;
+}
+#lingkar::before {
+    content: "";
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 0;
+    top: 5;
+    left: 0;
+    right: 0;
+}
+#lingkar h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color:#0e699a;
+}
+#lingkar h2 {
+    color: #0e699a;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+#lingkar .get-started-icon {
+    font-size: 30px;
+    background: #ff5821;
+    padding: 15px;
+    color: #fff;
+    border-radius: 20px;
+    position: relative;
+    z-index: 5;
+    box-shadow: 10px 2px 15px rgba(0,0,0,0.1)
+}
+#lingkar .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 18px 26px 8px 26px;
+    color: #fff;
+    background: #0e699a;
+    border-radius: 10px 30px 10px 30px;
+    position: relative;
+    z-index: 4;
+}
+#lingkar .btn-get-started:hover {
+    background: #fd9f08;
+}
+
+.article  {
+    padding-left: 200px;
+    margin-right: 150px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;
+
+}
+/*intro kesematan lalu lintas*/
+#lingkar2 {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    padding: 0;
+    margin-bottom: -510px;
+}
+#lingkar2::before {
+    content: "";
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 0;
+    top: 5;
+    left: 0;
+    right: 0;
+}
+#lingkar2 h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color:#0e699a;
+}
+#lingkar2 h2 {
+    color: #0e699a;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+.article  {
+    padding-left: 215px;
+    margin-right: 160px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.container {
+    text-align: center;
+}
+
+.container2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 75%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+  /* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}

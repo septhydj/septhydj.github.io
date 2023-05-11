@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--3D object-->
+    <title>&lt;lingkar-2023&gt; Mekanika-gerak</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!--Icon-->
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!--CSS style template-->
+    <link href="styles2.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+  </head>
+  <body>
+    <!--topbar-->
+    <section id="topbar" class="d-none d-lg-block">
+      <div class="container d-flex">
+          <div class="contact-info mr-auto">
+              <ul>
+                  <li>
+                      <i class="bi bi-envelope-at-fill"></i><a href="mailto:Septhy.dj@gmail.com"> Septhy.dj@gmail.com</a>
+                  </li>
+                  <li>
+                      <i class="bi bi-clock-fill"></i> Mekanika Gerak
+                  </li>
+              </ul>
+          </div>
+          <div class="cta">
+              <a href="#about" class="scrollto">Get Started</a>
+          </div>
+      </div>
+    </section>
+    <!--Header-->
+    <header id="header">
+        <div class="container d-flex">
+          <div class="logo mr-auto">
+              <h1 class="text-light">
+                  <a href="index.html"><span>SciLab</span></a>
+              </h1>
+          </div>
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li class="drop-down">
+                  <a href="#">LINK Youtube</a>
+                      <ul>
+                          <li><a href="https://www.youtube.com/watch?v=kKKM8Y-u7ds">Hukum Newton</a></li>
+                          <li><a href="https://www.youtube.com/watch?v=fo_pmp5rtzo">Gaya gesek</a></li>
+                          <li><a href="https://www.youtube.com/watch?v=Y-QOfc2XqOk">Impuls dan Momentum</a></li>
+
+                      </ul>
+                </li>
+                <li class="active"><a href="#values">Teori Fisika</a></li>
+                <li><a href="keselamatan_lalin.html">Keselamatan berlalu lintas</a></li>
+                <li><a href="permainan.html">Permainan</a></li>
+                <li><a href="https://form.jotform.com/231231940921044">Quiz</a></li>
+                <li><a href="#">STEM Projek</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+   </body>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="ac_-_honda_acty_ha3.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" auto-rotate camera-orbit="120.4deg 76.78deg 9.784m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.842592784157565m 0.11777706054022241m 1.3325631320468636m" data-normal="-0.022060995171327546m -0.6713198018287911m 0.7408394132095049m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Alur pada Ban</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.010356577160265537m 0.45305530640723723m 0.645739185963035m" data-normal="0.000010248869004419213m -0.9999934679230534m -0.003614416437852642m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Massa Mobil</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.8091917864582622m 1.8022521668295197m 1.0740139007076972m" data-normal="0.9727535991307119m 0.2318414011379261m 0.000009831052815802197m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Sabuk Pengaman</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="-0.8351620661242852m 1.687458283393627m 1.1253915176824885m" data-normal="-0.9785362650784849m 0.20607468992664624m 0.00000989373281490942m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Airbag</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>
+    <script src="script.js"></script>
+
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  </body>
+  <body>
+    <!--Guide-->
+    <section id="about" class="about">
+        <div class="row">
+            <div class="col-xl-4 col-lg-5" data-aos="fade-up">
+                <div class="content">
+                    <h3>Hukum Fisika di balik tabrakan mobil</h3>
+                    <p>Faktor umum terjadinya kecelakaan lalu lintas disebabkan oleh beberapa hal seperti faktor manusia, kendaraan, alam dan kondisi jalan.
+                    Peristiwa terjadinya kecelakaan lalu lintas dapat ditinjau secara kinematika dan dinamika geraknya. Dengan memahami hubungan tersebut,
+                    kita dapat mengambil tindakan pencegahan untuk mengurangi resiko terjadinya kecelakaan lalu lintas</p>
+                        <div class="text-center">
+                            <a href="tabrakan_fisika.html" class="more-btn">Learn More</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-7 d-flex">
+                <div class="icon-boxes d-flex flex-column justify-content-center">
+                    <div class="row">
+                        <div class="col-xl-4 d-flex align-item-stretch" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon-box mt-4 mt-xl-0">
+                                <i class="bi bi-stoplights"></i>
+                                <h4>Sabuk pengaman</h4>
+                                <p> Menurut hukum I Newton bahwa jika benda bergerak maka akan terus bergerak. Oleh karena itu pengemudi mobil yang tidak memakai sabuk pengaman akan terus bergerak maju yang sama dengan kecepatan mobil. Apa yang terjadi dengan pengemudi? Tentunya pengemudi itu akan membentur dashboard, kemudi, atau kaca depan mobil. </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 d-flex align-item-stretch" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon-box mt-4 mt-xl-0">
+                                <i class="bi bi-speedometer"></i>
+                                <h4>Airbag</h4>
+                                <p> Airbag atau yang disebut kantong udara diciptakan agar ketika terjadi pengereman mendadak atau benturan, kantong tersebut akan terpompa keluar dari dashboard dan memperlambat waktu benturan muka dengan dashboard. Hal ini berhubungan dengan prinsip fisika yaitu momentum dan impuls. </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 d-flex align-item-stretch" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon-box mt-4 mt-xl-0">
+                                <i class="bi bi-car-front"></i>
+                                <h4>Alur ban</h4>
+                                <p> Tujuan ban mobil diberi alur adalah untuk memperbesar gaya gesek dengan jalan. Dengan begitu persinggungan antara permukaan ban dan permukaan jalan akan memicu gaya gesek yang besar sehingga ban tidak tergelincir. Ini merupakan faktor keamanan yang penting dalam menggunakan ban.  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--You can find in SciLab-->
+    <section id="values" class="values">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-stretch"data-aos="fade-up">
+                    <div class="card" style="background-image: url(hukum_newton.png);">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">Hukum Newton</a></h5>
+                            <p class="card-text">Hukum Newton I menjelaskan konsep kelembaman benda. Hukum Newton 2 menjelaskan gaya, yang menghubungkan percepatan dan penyebab percepatan. Sedangkan hukum Newton 3 menjelaskan hukum aksi reaksi.</p>
+                            <div class="read-more"><a href="hukum_newton.pdf"><i class="bi bi-tags-fill"></i> Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch"data-aos="fade-up"data-aos-delay="100" >
+                    <div class="card" style="background-image: url(gaya_gesek.png);">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">Gaya Gesek</a></h5>
+                            <p class="card-text">Gaya yang berarah melawan gerak benda atau arah kecenderungan benda bergerak. Gaya gesek muncul apabila dua buah benda bersentuhan.</p>
+                            <div class="read-more"><a href="gaya_gesek.pdf"><i class="bi bi-tags-fill"></i> Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch"data-aos="fade-up" data-aos-delay="300">
+                    <div class="card" style="background-image: url(impuls.png);">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">Momentum</a></h5>
+                            <p class="card-text">Momentum merupakan ukuran kesulitan untuk memberhentikan benda. Besaran momentum dipengaruhi dua hal, yaitu berat atau massa dan kecepatan benda.</p>
+                            <div class="read-more"><a href="momentum.pdf"><i class="bi bi-tags-fill"></i> Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch"data-aos="fade-up"data-aos-delay="500" >
+                    <div class="card" style="background-image: url(tumbukan.png);">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">Tumbukan</a></h5>
+                            <p class="card-text">Tumbukan adalah interaksi dua buah benda atau lebih yang saling bertukar gaya dalam selang waktu tertentu dan memenuhi hukum kekekalan momentum.</p>
+                            <div class="read-more"><a href="tumbukan.pdf"><i class="bi bi-tags-fill"></i> Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--contact section-->
+        <section id="contact" class="contact">
+            <div class="container-fluid">
+                <div class="bg-info text-white text-center">
+                    <h2 data-aos="fade-up">
+                        Contact
+                    </h2>
+                    <p data-aos="fade-up">Need help and have questions related to this website please contact us</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up">
+                        <div class="info-box">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>Our Address</h3>
+                            <p>SMA Kartika XIX 1 Bandung</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="info-box">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p>septhyjayanthy79@guru.sma.belajar.id</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="info-box">
+                            <i class="bi bi-telephone"></i>
+                            <h3>Call Us</h3>
+                            <p>+62 856-2172-027</p>
+                        </div>
+                    </div>
+                </div>
+        <!--contact form-->
+        <div class="col-lg-6 mx-auto">
+            <form action="https://formsubmit.co/ee3026bc52643ee3f7df8fc8bb023f63" method="POST" role="form" class="php-email-form">
+            <div class="form-row">
+                <div class="col-md-6 form-group">
+                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" required/>
+                   <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" required/>
+                    <div class="validate"></div>
+                </div>
+            </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" required/>
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" data-rule="required"></textarea>
+                    <div class="validate"></div>
+                </div>
+                <div class="text-center">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container d-md-flex py-4">
+            <div class="mr-md-auto text-center text-md-left">
+                <div class="copyright">
+                    SciLab 2023/LINKAR 2023/<strong>"Merajut Inovasi Pendidikan Berkelanjutan, untuk Hari ini dan Masa Depan" </strong>
+                </div>
+                <div class="credits">
+                    Designed by <a href="#">septhydj </a>
+            </div>
+        </div>
+        <div class="logo-img">
+            <img src="logo.jpg" class="img-fluid" alt="">
+        </div>
+    </section>
+    </section>
+</body>
+</html>
